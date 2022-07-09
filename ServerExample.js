@@ -16,6 +16,17 @@ export default class ServerExample extends Component {
         const URL = "http://192.249.18.167:443/welcome"
         try {
             //const response = await fetch(URL + "/" + this.state.name);
+            const user = await fetch(URL, {
+                method: "POST",
+                body: JSON.stringify({name: this.state.name}),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+            if(response.status != 200){
+                throw new Error("Something is wrong"+response.status +  this.state.name)
+            }
+        
             const response = await fetch(URL, {
                 method: "POST",
                 body: JSON.stringify({name: this.state.name}),

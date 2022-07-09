@@ -9,7 +9,6 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import LoginScreen from './screens/LoginScreen';
 import HomeScreen from './screens/HomeScreen';
 import {AppRegistry} from 'react-native'
-import app from './ServerExample'
 import {name as appName} from './app.json';
 
 
@@ -29,7 +28,6 @@ export default function App() {
   );
 }
 
-AppRegistry.registerComponent(appName, () => app);
 
 
 
