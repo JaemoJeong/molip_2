@@ -1,0 +1,232 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@8.13.2
+2 info using node@v16.16.0
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 4ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/root/.cache/typescript/4.6/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 7ms
+11 timing config:load:file:/root/.npmrc Completed in 1ms
+12 timing config:load:user Completed in 1ms
+13 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:validate Completed in 0ms
+16 timing config:load:credentials Completed in 1ms
+17 timing config:load:setEnvs Completed in 1ms
+18 timing config:load Completed in 18ms
+19 timing npm:load:configload Completed in 18ms
+20 timing npm:load:mkdirpcache Completed in 1ms
+21 timing npm:load:mkdirplogs Completed in 4ms
+22 verbose title npm install @types/cross-spawn@ts4.6 @types/fbemitter@ts4.6 @types/getenv@ts4.6 @types/invariant@ts4.6 @types/node-fetch@ts4.6 @types/uuid@ts4.6
+23 verbose argv "install" "--ignore-scripts" "@types/cross-spawn@ts4.6" "@types/fbemitter@ts4.6" "@types/getenv@ts4.6" "@types/invariant@ts4.6" "@types/node-fetch@ts4.6" "@types/uuid@ts4.6" "--save-dev" "--user-agent" "typesInstaller/4.6.3"
+24 timing npm:load:setTitle Completed in 4ms
+25 timing config:load:flatten Completed in 7ms
+26 timing npm:load:display Completed in 8ms
+27 verbose logfile logs-max:10 dir:/root/.npm/_logs
+28 verbose logfile /root/.npm/_logs/2022-07-09T05_03_49_433Z-debug-0.log
+29 timing npm:load:logFile Completed in 5ms
+30 timing npm:load:timers Completed in 0ms
+31 timing npm:load:configScope Completed in 0ms
+32 timing npm:load Completed in 42ms
+33 timing arborist:ctor Completed in 1ms
+34 silly logfile start cleaning logs, removing 1 files
+35 silly logfile done cleaning log files
+36 timing idealTree:init Completed in 74ms
+37 timing arborist:ctor Completed in 1ms
+38 http fetch GET 200 https://registry.npmjs.org/@types%2fuuid 155ms (cache miss)
+39 http fetch GET 200 https://registry.npmjs.org/@types%2fnode-fetch 160ms (cache miss)
+40 http fetch GET 200 https://registry.npmjs.org/@types%2fcross-spawn 933ms (cache miss)
+41 http fetch GET 200 https://registry.npmjs.org/@types%2ffbemitter 948ms (cache miss)
+42 http fetch GET 200 https://registry.npmjs.org/@types%2finvariant 1421ms (cache miss)
+43 http fetch GET 200 https://registry.npmjs.org/@types%2fgetenv 1445ms (cache miss)
+44 timing idealTree:userRequests Completed in 1461ms
+45 silly idealTree buildDeps
+46 silly fetch manifest @types/cross-spawn@6.0.2
+47 silly fetch manifest @types/fbemitter@2.0.32
+48 silly fetch manifest @types/getenv@1.0.0
+49 silly fetch manifest @types/invariant@2.2.35
+50 silly fetch manifest @types/node-fetch@2.6.2
+51 silly fetch manifest @types/uuid@8.3.4
+52 silly placeDep ROOT @types/cross-spawn@6.0.2 OK for:  want: 6.0.2
+53 silly placeDep ROOT @types/fbemitter@2.0.32 OK for:  want: 2.0.32
+54 silly placeDep ROOT @types/getenv@1.0.0 OK for:  want: 1.0.0
+55 silly placeDep ROOT @types/invariant@2.2.35 OK for:  want: 2.2.35
+56 silly placeDep ROOT @types/node-fetch@2.6.2 OK for:  want: 2.6.2
+57 silly placeDep ROOT @types/uuid@8.3.4 OK for:  want: 8.3.4
+58 silly fetch manifest form-data@^3.0.0
+59 http fetch GET 200 https://registry.npmjs.org/form-data 40ms (cache revalidated)
+60 timing idealTree:#root Completed in 67ms
+61 timing idealTree:node_modules/@types/cross-spawn Completed in 1ms
+62 timing idealTree:node_modules/@types/fbemitter Completed in 0ms
+63 timing idealTree:node_modules/@types/getenv Completed in 0ms
+64 timing idealTree:node_modules/@types/invariant Completed in 0ms
+65 silly placeDep ROOT form-data@3.0.1 OK for: @types/node-fetch@2.6.2 want: ^3.0.0
+66 silly fetch manifest asynckit@^0.4.0
+67 silly fetch manifest combined-stream@^1.0.8
+68 silly fetch manifest mime-types@^2.1.12
+69 http fetch GET 200 https://registry.npmjs.org/mime-types 41ms (cache revalidated)
+70 http fetch GET 200 https://registry.npmjs.org/combined-stream 47ms (cache revalidated)
+71 http fetch GET 200 https://registry.npmjs.org/asynckit 49ms (cache revalidated)
+72 timing idealTree:node_modules/@types/node-fetch Completed in 54ms
+73 timing idealTree:node_modules/@types/uuid Completed in 0ms
+74 silly placeDep ROOT asynckit@0.4.0 OK for: form-data@3.0.1 want: ^0.4.0
+75 silly placeDep ROOT combined-stream@1.0.8 OK for: form-data@3.0.1 want: ^1.0.8
+76 silly placeDep ROOT mime-types@2.1.35 OK for: form-data@3.0.1 want: ^2.1.12
+77 silly fetch manifest delayed-stream@~1.0.0
+78 silly fetch manifest mime-db@1.52.0
+79 http fetch GET 200 https://registry.npmjs.org/delayed-stream 31ms (cache revalidated)
+80 http fetch GET 200 https://registry.npmjs.org/mime-db 32ms (cache revalidated)
+81 timing idealTree:node_modules/form-data Completed in 42ms
+82 timing idealTree:node_modules/asynckit Completed in 0ms
+83 silly placeDep ROOT delayed-stream@1.0.0 OK for: combined-stream@1.0.8 want: ~1.0.0
+84 timing idealTree:node_modules/combined-stream Completed in 2ms
+85 timing idealTree:node_modules/delayed-stream Completed in 0ms
+86 silly placeDep ROOT mime-db@1.52.0 OK for: mime-types@2.1.35 want: 1.52.0
+87 timing idealTree:node_modules/mime-types Completed in 2ms
+88 timing idealTree:node_modules/mime-db Completed in 0ms
+89 timing idealTree:buildDeps Completed in 171ms
+90 timing idealTree:fixDepFlags Completed in 1ms
+91 timing idealTree Completed in 1709ms
+92 timing reify:loadTrees Completed in 1710ms
+93 timing reify:diffTrees Completed in 4ms
+94 silly reify moves {}
+95 timing reify:retireShallow Completed in 2ms
+96 timing reify:createSparse Completed in 5ms
+97 timing reify:loadBundles Completed in 0ms
+98 silly audit bulk request {
+98 silly audit   '@babel/helper-validator-identifier': [ '7.18.6' ],
+98 silly audit   '@babel/parser': [ '7.18.8' ],
+98 silly audit   '@babel/types': [ '7.18.8' ],
+98 silly audit   '@types/accepts': [ '1.3.5' ],
+98 silly audit   '@types/babel__core': [ '7.1.19' ],
+98 silly audit   '@types/babel__generator': [ '7.6.4' ],
+98 silly audit   '@types/babel__template': [ '7.4.1' ],
+98 silly audit   '@types/babel__traverse': [ '7.17.1' ],
+98 silly audit   '@types/body-parser': [ '1.19.2' ],
+98 silly audit   '@types/bytes': [ '3.1.1' ],
+98 silly audit   '@types/call-bind': [ '1.0.1' ],
+98 silly audit   '@types/connect': [ '3.4.35' ],
+98 silly audit   '@types/content-disposition': [ '0.5.5' ],
+98 silly audit   '@types/content-type': [ '1.1.5' ],
+98 silly audit   '@types/cookie': [ '0.5.1' ],
+98 silly audit   '@types/cookie-signature': [ '1.0.4' ],
+98 silly audit   '@types/debug': [ '4.1.7' ],
+98 silly audit   '@types/depd': [ '1.1.32' ],
+98 silly audit   '@types/destroy': [ '1.0.0' ],
+98 silly audit   '@types/ee-first': [ '1.1.0' ],
+98 silly audit   '@types/encodeurl': [ '1.0.0' ],
+98 silly audit   '@types/escape-html': [ '1.0.2' ],
+98 silly audit   '@types/etag': [ '1.8.1' ],
+98 silly audit   '@types/express': [ '4.17.13' ],
+98 silly audit   '@types/express-serve-static-core': [ '4.17.29' ],
+98 silly audit   '@types/finalhandler': [ '1.1.1' ],
+98 silly audit   '@types/forwarded': [ '0.1.0' ],
+98 silly audit   '@types/fresh': [ '0.5.0' ],
+98 silly audit   '@types/function-bind': [ '1.1.7' ],
+98 silly audit   '@types/get-intrinsic': [ '1.0.0' ],
+98 silly audit   '@types/has': [ '1.0.0' ],
+98 silly audit   '@types/has-symbols': [ '1.0.0' ],
+98 silly audit   '@types/http-errors': [ '1.8.2' ],
+98 silly audit   '@types/inherits': [ '0.0.30' ],
+98 silly audit   '@types/media-typer': [ '1.1.1' ],
+98 silly audit   '@types/merge-descriptors': [ '1.0.1' ],
+98 silly audit   '@types/methods': [ '1.1.1' ],
+98 silly audit   '@types/mime': [ '2.0.3', '1.3.2' ],
+98 silly audit   '@types/mime-db': [ '1.43.1' ],
+98 silly audit   '@types/mime-types': [ '2.1.1' ],
+98 silly audit   '@types/ms': [ '0.7.31' ],
+98 silly audit   '@types/negotiator': [ '0.6.1' ],
+98 silly audit   '@types/node': [ '18.0.3' ],
+98 silly audit   '@types/object-inspect': [ '1.8.1' ],
+98 silly audit   '@types/on-finished': [ '2.3.1' ],
+98 silly audit   '@types/parseurl': [ '1.3.1' ],
+98 silly audit   '@types/prop-types': [ '15.7.5' ],
+98 silly audit   '@types/proxy-addr': [ '2.0.0' ],
+98 silly audit   '@types/qs': [ '6.9.7' ],
+98 silly audit   '@types/range-parser': [ '1.2.4' ],
+98 silly audit   '@types/react': [ '18.0.15' ],
+98 silly audit   '@types/react-dom': [ '18.0.6' ],
+98 silly audit   '@types/react-native': [ '0.69.2' ],
+98 silly audit   '@types/safer-buffer': [ '2.1.0' ],
+98 silly audit   '@types/scheduler': [ '0.16.2' ],
+98 silly audit   '@types/send': [ '0.17.1' ],
+98 silly audit   '@types/serve-static': [ '1.13.10' ],
+98 silly audit   '@types/statuses': [ '2.0.0' ],
+98 silly audit   '@types/type-is': [ '1.6.3' ],
+98 silly audit   '@types/utils-merge': [ '0.0.28' ],
+98 silly audit   '@types/vary': [ '1.1.0' ],
+98 silly audit   csstype: [ '3.1.0' ],
+98 silly audit   'to-fast-properties': [ '2.0.0' ],
+98 silly audit   'types-registry': [ '0.1.599' ],
+98 silly audit   '@types/cross-spawn': [ '6.0.2' ],
+98 silly audit   '@types/fbemitter': [ '2.0.32' ],
+98 silly audit   '@types/getenv': [ '1.0.0' ],
+98 silly audit   '@types/invariant': [ '2.2.35' ],
+98 silly audit   '@types/node-fetch': [ '2.6.2' ],
+98 silly audit   '@types/uuid': [ '8.3.4' ],
+98 silly audit   'form-data': [ '3.0.1' ],
+98 silly audit   asynckit: [ '0.4.0' ],
+98 silly audit   'combined-stream': [ '1.0.8' ],
+98 silly audit   'mime-types': [ '2.1.35' ],
+98 silly audit   'delayed-stream': [ '1.0.0' ],
+98 silly audit   'mime-db': [ '1.52.0' ]
+98 silly audit }
+99 silly tarball no local data for form-data@https://registry.npmjs.org/form-data/-/form-data-3.0.1.tgz. Extracting by manifest.
+100 silly tarball no local data for @types/node-fetch@https://registry.npmjs.org/@types/node-fetch/-/node-fetch-2.6.2.tgz. Extracting by manifest.
+101 silly tarball no local data for @types/uuid@https://registry.npmjs.org/@types/uuid/-/uuid-8.3.4.tgz. Extracting by manifest.
+102 silly tarball no local data for @types/invariant@https://registry.npmjs.org/@types/invariant/-/invariant-2.2.35.tgz. Extracting by manifest.
+103 silly tarball no local data for @types/getenv@https://registry.npmjs.org/@types/getenv/-/getenv-1.0.0.tgz. Extracting by manifest.
+104 silly tarball no local data for @types/cross-spawn@https://registry.npmjs.org/@types/cross-spawn/-/cross-spawn-6.0.2.tgz. Extracting by manifest.
+105 silly tarball no local data for @types/fbemitter@https://registry.npmjs.org/@types/fbemitter/-/fbemitter-2.0.32.tgz. Extracting by manifest.
+106 timing reifyNode:node_modules/combined-stream Completed in 71ms
+107 timing reifyNode:node_modules/delayed-stream Completed in 71ms
+108 timing reifyNode:node_modules/mime-types Completed in 72ms
+109 http fetch GET 200 https://registry.npmjs.org/@types/node-fetch/-/node-fetch-2.6.2.tgz 67ms (cache miss)
+110 timing reifyNode:node_modules/@types/node-fetch Completed in 84ms
+111 http fetch GET 200 https://registry.npmjs.org/@types/invariant/-/invariant-2.2.35.tgz 66ms (cache miss)
+112 timing reifyNode:node_modules/@types/invariant Completed in 85ms
+113 timing reifyNode:node_modules/mime-db Completed in 86ms
+114 http fetch GET 200 https://registry.npmjs.org/form-data/-/form-data-3.0.1.tgz 71ms (cache miss)
+115 timing reifyNode:node_modules/form-data Completed in 87ms
+116 timing reifyNode:node_modules/asynckit Completed in 87ms
+117 http fetch GET 200 https://registry.npmjs.org/@types/uuid/-/uuid-8.3.4.tgz 69ms (cache miss)
+118 timing reifyNode:node_modules/@types/uuid Completed in 88ms
+119 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 207ms
+120 timing auditReport:getReport Completed in 211ms
+121 silly audit report {}
+122 timing auditReport:init Completed in 0ms
+123 timing reify:audit Completed in 213ms
+124 http fetch GET 200 https://registry.npmjs.org/@types/fbemitter/-/fbemitter-2.0.32.tgz 278ms (cache miss)
+125 timing reifyNode:node_modules/@types/fbemitter Completed in 302ms
+126 http fetch GET 200 https://registry.npmjs.org/@types/getenv/-/getenv-1.0.0.tgz 714ms (cache miss)
+127 timing reifyNode:node_modules/@types/getenv Completed in 734ms
+128 http fetch GET 200 https://registry.npmjs.org/@types/cross-spawn/-/cross-spawn-6.0.2.tgz 770ms (cache miss)
+129 timing reifyNode:node_modules/@types/cross-spawn Completed in 791ms
+130 timing reify:unpack Completed in 792ms
+131 timing reify:unretire Completed in 1ms
+132 timing build:queue Completed in 1ms
+133 timing build:deps Completed in 2ms
+134 timing build Completed in 2ms
+135 timing reify:build Completed in 3ms
+136 timing reify:trash Completed in 0ms
+137 timing reify:save Completed in 47ms
+138 timing reify Completed in 2594ms
+139 silly ADD node_modules/mime-db
+140 silly ADD node_modules/delayed-stream
+141 silly ADD node_modules/mime-types
+142 silly ADD node_modules/combined-stream
+143 silly ADD node_modules/asynckit
+144 silly ADD node_modules/form-data
+145 silly ADD node_modules/@types/uuid
+146 silly ADD node_modules/@types/node-fetch
+147 silly ADD node_modules/@types/invariant
+148 silly ADD node_modules/@types/getenv
+149 silly ADD node_modules/@types/fbemitter
+150 silly ADD node_modules/@types/cross-spawn
+151 timing command:install Completed in 2601ms
+152 verbose exit 0
+153 timing npm Completed in 2704ms
+154 info ok
