@@ -14,16 +14,20 @@ const PORT = 443;
 
 app.get("/welcome/:name", function(req, res){
     const name = req.params.name;
-    res.send("Welcome to my web server " + name);
+    if(name=="jaemo") res.send("hello jaemo");
+    else res.send("Welcome to my web server " + name);
 });
 
-app.post("/welcome", function(req, res) {
-    const name = req.body.name;
-    res.send("Welcome " + name);
+app.post("/search", function(req, res) {
+    const type = req.body.type;
+    const clas = req.body.class;
+    const grade = req.body.grade;
+    console.log("index");
+    res.send("Welcome ");
 })
 
 app.listen(PORT, function() {
     console.log("server is ready at " + PORT);
 });
 
-app.use('/api/movie', require('./routes/router'))
+app.use('/api', require('./routes/router'))

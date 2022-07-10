@@ -3,5 +3,5 @@
     "user" : "root",
     "password" : "wjdwoah4760",
     "port" : "3306",
-    "database" : "mysql"
+    "database" : "my_db"
 }
